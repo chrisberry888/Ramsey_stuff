@@ -1,1 +1,2 @@
 # Ramsey_stuff
+This repository is used for a long-term math project that I'm working on with professor Bill Gasarch of the University of Maryland, College Park. The files in this repository I made for exploration of ideas in Ramsey Theory. Particularly, the "group_explorer" folder is something I made to explore the relationship between Ramsey numbers and group theory.
