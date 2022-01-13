@@ -9,7 +9,6 @@ class Group:
         end = (num_of_colors-1) * np.ones(size)
         self.__nodes = nodes
         self.__num_of_colors = num_of_colors
-        self.__identity = exps
         self.__elt_list = []
         while True:
             self.__elt_list.append(Element(nodes, num_of_colors, exps))
@@ -27,7 +26,17 @@ class Group:
     def __str__(self):
         return '\n\n'.join([str(elt) for elt in self.__elt_list])
 
+    def __len__(self):
+        return len(self.get_list())
+        
+    def __getitem__(self,i):
+        return self.get_list()[i]
     
-    def get_list():
+    def get_list(self):
         return self.__elt_list
+    
+    def get_identity(self):
+        return self.__elt_list[0]
+        
+     
     

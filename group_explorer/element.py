@@ -22,17 +22,17 @@ class Element:
     def __str__(self):
         return str(np.around(self.__matrix, decimals=2))
         
-    def nodes():
+    def nodes(self):
         return self.__nodes
         
-    def num_of_colors():
+    def num_of_colors(self):
         return self.__num_of_colors
         
-    def matrix():
+    def matrix(self):
         return self.__matrix
         
         
-    def mult(elt, is_mat = False):
+    def mult(self, elt, is_mat = False):
         if is_mat:
             return np.matmul(self.__matrix, elt)
         if (self.__nodes == elt.nodes() and 
